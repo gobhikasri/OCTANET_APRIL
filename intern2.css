@@ -1,0 +1,45 @@
+header{
+    height: 100vh;
+    width: 100vp;
+    display: flex;
+    background:  url(routine.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Poppins',sans-serif;
+    align-items: center;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 30px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    border-top: 5px solid #009578;
+    border-bottom: 5px solid #009578;
+    
+
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+.todo_value{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 1 em;
+    font-weight: bold;
+    flex-grow: 1;
+}
+.todo:has(.todo_checkbox:checked){
+    color: #555555;
+    background: #eeeeee;
+    text-decoration: line-through;
+    order: 1;
+}
